@@ -1,0 +1,17 @@
+[AppConfig]
+AppTitle=\x89c6\x9891\x76d1\x7ba1\x5e73\x53f0
+NVRType="\x6df1\x5e7f;\x5b9d\x5b66;\x654f\x8fbe;\x6cf0\x6770;\x6c47\x8fea;\x94f6\x6c5f;\x6d77\x5eb7;\x5927\x534e;\x5b87\x89c6;\x7693\x7ef4;\x94f6\x6d77"
+IPCType="\x6cf0\x6770;\x654f\x8fbe;\x94f6\x6c5f;\x6d77\x5eb7;\x5927\x534e;\x5b87\x89c6"
+AppStyle=:/image/silvery.css
+VideoDelayTime=300
+UseVideoOffLineCheck=true
+VideoOffLineCheckInterval=5
+RtspType=1
+AutoRun=false
+AutoPoll=false
+PollType=1
+PollInterval=30
+PollSleep=0
+VideoType=16
+RtspAddr16=|||||||||||||||
+LastConfig=1

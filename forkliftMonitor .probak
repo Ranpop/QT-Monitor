@@ -1,0 +1,76 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2015-03-27
+#
+#-------------------------------------------------
+
+QT += core gui network sql
+QT += widgets
+QT += printsupport
+
+TARGET = forkliftMonitor
+TEMPLATE = app
+
+SOURCES += \
+    main.cpp \
+    iconhelper.cpp \
+    myapp.cpp \
+    switchbutton.cpp \
+    frmmessagebox.cpp \
+    frmmain.cpp \
+    graphics/forkliftItem.cpp \
+    graphics/plotwidget.cpp \
+    graphics/mapwidget.cpp \
+    qcustomPlot/qcustomplot.cpp \
+    io_layer/isetcommond.cpp \
+    io_layer/igetstatusdata.cpp \
+    io_layer/inoutfactory.cpp \
+    io_layer/sharememory.cpp \
+    io_layer/getdatathread.cpp \
+    io_layer/testsenddata.cpp \
+    io_layer/savedatathread.cpp \
+    graphics/lineItem.cpp \
+    graphics/forkliftPathItem.cpp
+
+HEADERS  += \
+    myhelper.h \
+    iconhelper.h \
+    myapp.h \
+    switchbutton.h \
+    frmmessagebox.h \
+    frmmain.h \
+    graphics/forkliftItem.h \
+    graphics/plotwidget.h \
+    graphics/mapwidget.h \
+    qcustomPlot/qcustomplot.h \
+    io_layer/isetcommond.h \
+    io_layer/igetstatusdata.h \
+    io_layer/ibasestruct.h \
+    io_layer/inoutfactory.h \
+    io_layer/sharememory.h \
+    io_layer/getdatathread.h \
+    io_layer/testsenddata.h \
+    io_layer/savedatathread.h \
+    graphics/lineItem.h \
+    graphics/forkliftPathItem.h
+
+FORMS    += \
+    frmmessagebox.ui \
+    frmmain.ui \
+
+INCLUDEPATH 	+= $$PWD
+
+MOC_DIR         = temp/moc
+RCC_DIR         = temp/rcc
+UI_DIR          = temp/ui
+OBJECTS_DIR     = temp/obj
+DESTDIR         = bin
+
+win32:RC_FILE=main.rc
+
+RESOURCES += \
+    rc.qrc
+
+INCLUDEPATH += /usr/local/include/opencv2/
+LIBS += /usr/local/lib/libopencv_core.so
+LIBS += /usr/local/lib/libopencv_imgcodecs.so
